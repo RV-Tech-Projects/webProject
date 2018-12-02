@@ -20,7 +20,7 @@ if(!isset($_SESSION['username']))
         tinymce.init({
             selector: '#myTextarea',
             theme: 'modern',
-            width: 1428,
+            width: 1424,
             height: 700,
             plugins: [
             'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
@@ -63,34 +63,75 @@ if(!isset($_SESSION['username']))
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/en/thumb/8/8d/National_Board_of_Accreditation.svg/1200px-National_Board_of_Accreditation.svg.png">
 
     <style>
+        #headingOne {
+            display: flex;
+            justify-content: space-between;
+        }
         #logout-button {
             display: inline;
-            margin-left: 2%;
             height: 50%;
+        }
+        body {
+            background: #0b2e13;
+            padding-left: 0.5%;
+            padding-right: 0.5%;
         }
     </style>
 </head>
 <body>
-    <div class=" container input-group input-group-lg my-2">
-        <div class="alert alert-light" role="alert">
-          <p class="p-0 my-0 mx-0">Enter the File name and hit enter to load:</p>
-        </div>
-      <input id="documentName" type="text" class="form-control block" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
-                placeholder="Enter the document name" value="DEFAULT">
-        <a id="logout-button" class="btn btn-outline-danger" href="../index.php?logout=True">Sign out</a>
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <button class="btn btn-outline-success" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                Create a Flow-Chart
+            </button>
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Create New Document
+            </button>
+            <a id="logout-button" class="btn btn-outline-danger" href="../index.php?logout=True">Sign out</a>
 
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class=" container input-group input-group-lg my-2">
+                    <div class="alert alert-light" role="alert">
+                        <p class="p-0 my-0 mx-0">Enter the File name and hit enter to load:</p>
+                    </div>
+                    <input id="documentName" type="text" class="form-control block" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"
+                           placeholder="Enter the document name" value="DEFAULT">
+
+                </div>
+            </div>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class=" container input-group input-group-lg my-2">
+                    <p>Click the <strong>Create</strong> button to go to <strong>Draw.io</strong>. Then create your desired flowchart. After you are done creating it, click on <strong>File->Export as->PNG</strong>.
+                    Then a pop-up box will appear. Click on <strong>Export</strong>. On the next pop-up box, select <strong>Device</strong> and hit <strong>Download</strong>.
+                    Your flowchart will be downloaded. Then head-over back to this site and then upload the flowchart where you want to using the <strong>Upload Image</strong>
+                     feature.</p>
+                    <a class="btn btn-outline-danger" href="https://www.draw.io/" target="_blank">Create</a>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
     <textarea id="myTextarea" class="ml-1"></textarea>
 
     <script>
         
-        documentName = document.querySelector("#documentName");
-        documentNameKey = documentName.value;
+        let documentName = document.querySelector("#documentName");
+        let documentNameKey = documentName.value;
         documentName.addEventListener("change", function(){
             documentNameKey = documentName.value;
             body.innerHTML = localStorage[documentNameKey] || '<p style="text-align: center;" data-mce-style="text-align: center;"><strong>BMS Institute of Technology and Mgmt.</strong></p><p style="text-align: center;" data-mce-style="text-align: center;"><strong>Computer Science &amp; Engg.</strong></p><hr><p><br></p><h2><strong>2</strong> <strong>PROGRAM CURRICULUM AND TEACHING ­ LEARNING PROCESSES (120)</strong> </h2><hr><h3><br><strong>2.1</strong> Program Curriculum (20)</h3><p><br data-mce-bogus="1"></p><hr><h4><br><strong>2.1.1</strong> State the process used to identify extent of compliance of the University curriculum for attaining the Program Outcomes and Program Specific Outcomes as mentioned in AnnexureI. Also mention the identified curricular gaps, if any&nbsp;<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p>(State the process details; also mention identified curricular gaps). <br><strong>Note</strong> : In case all POs are being demonstrably met through University Curriculum then 2.1.2 will not be applicable and the weightage of 2.1.1 will be 20.</p><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h4><strong>2.1.2</strong> State the delivery details of the content beyond the syllabus for the attainment of POs and PSOs (10) ﻿<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p>(Provide details of the additional course/ learning material/ content/ laboratory experiments/ projects etc., arising from the gaps identified in 2.1.1 in a tabular form in the format given below) <br><strong>Note</strong> : Please mention in detail whether the Institution has given such inputs and suggestions to the Affiliating University regarding curricular gaps and possible addition of new content/ add­on courses in the curriculum, to bridge the gap and to better attain program outcome(s).</p><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h3><strong>2.2</strong> Teaching ­ Learning Processes (100)</h3><hr><h4><br><strong>2.2.1</strong> Describe processes followed to improve quality of Teaching &amp; Learning (25)&nbsp;<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><h4>(Processes may include adherence to academic calendar and improving instruction methods using pedagogical initiatives such as real world examples, collaborative learning, quality of laboratory experience with regard to conducting experiments, recording observations, analysis of data etc. encouraging bright students, assisting weak students etc. The implementation details and impact analysis need to be documented)</h4><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h4><strong>2.2.2</strong> Quality of internal semester Question papers, Assignments and Evaluation (20) ﻿<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p>(Mention the initiatives, implementation details and analysis of learning levels related to quality of semester question papers, assignments and evaluation)</p><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h4><strong>2.2.3</strong> Quality of student projects (25) ﻿<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p>(Quality of the project is measured in terms of consideration to factors including, but not limited to, environment, safety, ethics, cost, type(application, product, research, review etc.) and standards. Processes related to project identification, allotment, continuous monitoring, evaluation including demonstration of working prototypes and enhancing the relevance of projects. Mention Implementation details including details.</p><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h4><strong>2.2.4</strong> Initiative related to industry interaction (15) ﻿<a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p>(Give details of the industry involvement in the program such as industry­attached laboratories, partial delivery of appropriate courses by industry experts etc.&nbsp;</p><p><br></p><p><img class="mce-pagebreak" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-mce-resize="false" data-mce-placeholder=""></p><p><br></p><h4><strong>2.2.5</strong> Initiative related to industry internship/summer training (15) ﻿<a href="http://SARUGTireIITemplateRevisedQuestion.aspx?Appid=1660&amp;Progid=558&amp;QuestID=28" target="_blank" rel="noopener" data-mce-href="http://SARUGTireIITemplateRevisedQuestion.aspx?Appid=1660&amp;Progid=558&amp;QuestID=28"></a><a href="https://enba.nbaind.org/Account/Login.aspx?reason=1" target="_blank" rel="noopener" data-mce-href="https://enba.nbaind.org/Account/Login.aspx?reason=1">Open Seperately</a></h4><p><a href="http://SARUGTireIITemplateRevisedQuestion.aspx?Appid=1660&amp;Progid=558&amp;QuestID=28" target="_blank" rel="noopener" data-mce-href="http://SARUGTireIITemplateRevisedQuestion.aspx?Appid=1660&amp;Progid=558&amp;QuestID=28">﻿</a></p><p>(Mention the initiatives, implementation details and impact analysis)</p>'
         });
     </script>
     <script src="save.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

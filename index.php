@@ -38,7 +38,7 @@
       <input name="password" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
       <input name="login" class="btn btn-lg btn-primary btn-block" type="submit" value="Log in" id = "login"</button>
 	  
-      <p class="mt-5 mb-3 text-muted">&copy; 29/08/2018<br> Made by <a href="https://www.linkedin.com/in/vighnesh-raut-b6299114b/" target="_blank">RV Tech</a></p>
+      <p class="mt-5 mb-3 text-muted">&copy; 29/08/2018<br> Made by <a href="https://github.com/RV-Tech-Projects" target="_blank">RV Tech</a></p>
     </form>
 	
 	<?php
