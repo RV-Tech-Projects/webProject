@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9ffc5a2-dc6a-49a9-9e29-c5c81217c8d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/52f4c_WhatsApp_Image_2018-06-03_at_12.48.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/782f6_29749324_1975115069415462_7472720075850963135_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/7ca5b_WhatsApp_Image_2018-06-03_at_12.48.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/899a9_29749324_1975115069415462_7472720075850963135_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/e3d41_WhatsApp_Image_2018-06-03_at_12.48.48.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fe70a_29749324_1975115069415462_7472720075850963135_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/save.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tinymce.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/upload.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,41 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="120" selection-start-line="8" selection-start-column="120" selection-end-line="8" selection-end-column="120" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
-                <element signature="e#219#224#0" expanded="true" />
-                <element signature="e#716#722#0" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#6;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#10;n#!!top" expanded="true" />
-                <element signature="e#2514#2519#0" expanded="true" />
-                <element signature="e#2533#2539#0" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#13;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#17;n#!!top" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#21;n#!!top" expanded="true" />
-                <element signature="e#5278#5284#0" expanded="true" />
-                <element signature="n#src#0;n#img#0;n#p#25;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/save.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/upload.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+            <state relative-caret-position="375">
+              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -73,7 +50,10 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.html" />
         <option value="$PROJECT_DIR$/upload.php" />
         <option value="$PROJECT_DIR$/save.js" />
+        <option value="$USER_HOME$/github/MyApps/loginPageInPHP/redirect/welcomePage.php" />
+        <option value="$PROJECT_DIR$/includes/databases.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/redirect/index1.php" />
       </list>
     </option>
   </component>
@@ -87,6 +67,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -94,11 +75,21 @@
               <item name="WebDevelopmentProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="WebDevelopmentProject" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebDevelopmentProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevelopmentProject" type="462c0819:PsiDirectoryNode" />
+              <item name="redirect" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebDevelopmentProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebDevelopmentProject" type="462c0819:PsiDirectoryNode" />
+              <item name="redirect" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,17 +125,20 @@
       <workItem from="1541953778848" duration="87000" />
       <workItem from="1543202087890" duration="794000" />
       <workItem from="1543335508183" duration="2706000" />
-      <workItem from="1543580236435" duration="469000" />
+      <workItem from="1543580236435" duration="798000" />
+      <workItem from="1543638062311" duration="132000" />
+      <workItem from="1543767602306" duration="830000" />
+      <workItem from="1543769050126" duration="933000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6319000" />
+    <option name="totallyTimeSpent" value="8543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25679544" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26037195" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -174,24 +168,32 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/save.js">
+    <entry file="file://$PROJECT_DIR$/index1.php" />
+    <entry file="file://$PROJECT_DIR$/save.js" />
+    <entry file="file://$PROJECT_DIR$/upload.php" />
+    <entry file="file://$USER_HOME$/github/MyApps/loginPageInPHP/redirect/welcomePage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="58" selection-start-line="5" selection-start-column="58" selection-end-line="5" selection-end-column="58" />
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/upload.php">
+    <entry file="file://$PROJECT_DIR$/includes/databases.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="120" selection-start-line="8" selection-start-column="120" selection-end-line="8" selection-end-column="120" />
+        <state relative-caret-position="-807" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redirect/index1.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="78" column="70" selection-start-line="78" selection-start-column="70" selection-end-line="78" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#!!top" expanded="true" />
@@ -207,6 +209,13 @@
             <element signature="e#5278#5284#0" expanded="true" />
             <element signature="n#src#0;n#img#0;n#p#25;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
